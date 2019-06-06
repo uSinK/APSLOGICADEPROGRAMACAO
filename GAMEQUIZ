@@ -1,0 +1,206 @@
+package javaapplication18;
+import java.util.Scanner;
+
+public class JavaApplication18 {
+
+    
+    public static void main(String[] args) {
+        
+        Scanner input = new Scanner(System.in);
+        int   resultadojogador1, resultadojogador2,
+        resposta1, resposta2, resposta3, resposta4, resposta5, resposta6, resposta7, resposta8, 
+        pontos1=0, pontos2=0;
+      
+        String jogador1, jogador2, preparado1, preparado2;
+        
+        
+       System.out.println("Este é um game no formato quiz, para desafiar seus amigos e provar que você é o maior defensor do nosso planeta!!!"
+                + "\n"
+                + "O combate é 1vs1 \nVocê deverá selecionar a resposta correta para pontuar"
+                + "\nPara selecionar sua resposta, basta digitar o número correspondente à alternativa"
+                + "\nO jogador que acertar mais questões vence o desafio ");
+               
+        
+        System.out.println("Digite seu nome jogador 1.");
+        jogador1 = input.nextLine();
+        System.out.println("Digite seu nome jogador 2.");
+        jogador2 = input.nextLine();
+        
+        System.out.println("\nVamos lá?\n"
+            +jogador1 + " está preparado?"
+            + "\nSe sim, digite 'OK'");
+        preparado1 = input.nextLine();
+        
+        
+        System.out.println("\nE você\n "+jogador2
+                + "\nEstá preparado?"
+                + "\nSe sim, digite 'PREPARADO'");
+            preparado2 = input.nextLine();
+    
+        
+        
+        System.out.println("\nEntão vamos lá!"
+            + "\nPergunta para O(a)"+jogador1
+            + "\n Qual alternativa  representa um aspecto muito importante para a sustentabilidade ambiental? "
+            + "\n 1) Uso de garrafas pet "
+            + "\n 2) Tomar banhos demorados "
+            + "\n 3) Reciclar o lixo de forma consciente "
+            + "\n 4) Deixar a luz acesa ");
+            resposta1 = input.nextInt();
+         
+        
+    if (resposta1 == 3) {
+        System.out.println("\nAlternativa correta ");
+            pontos1 += 1000;
+    }
+    else {
+        System.out.println("\nAlternativa incorreta ");
+            pontos1 = 0;
+            }
+    
+       
+        System.out.println(" \nPergunta para o(a)"+jogador2
+                + "\n Imagine que o Cebolinha estava cozinhando com seus amigos, logo após eles cozinharem,"
+                + "\nCebolinha e seus amigos perceberam que sobraram alguns alimentos em bom estado."
+                + "\nNesta situação, o que não seria uma atitude sustentável?"
+                + "\n 1) Guardar os alimentos numa geladeira para fazer outros pratos em outra oportunidade  "
+                + "\n 2) Jogar todos os alimentos no lixo "
+                + "\n 3) Usar os alimentos como adubo para plantas "
+                + "\n 4) Todas as alternativas anteriores ");
+            resposta2 = input.nextInt();
+        
+    if (resposta2 == 2) {
+        System.out.println("\nAlternativa correta " );
+            pontos2 += 1000;
+    }
+    else {
+        System.out.println("\nAlternativa incorreta ");
+            pontos2 += 0;
+    
+    }
+            
+        System.out.println("\nPergunta para o(a) "+jogador1
+                + "\nNa coleta seletiva, a cor vermelha representa que tipo de lixo?  "
+                + "\n 1) Vidro "
+                + "\n 2) Plástico  "
+                + "\n 3) Metal "
+                + "\n 4) Papel/papelão ");
+        resposta3 = input.nextInt();
+        
+    if (resposta3 == 2) {
+        System.out.println("\nAlternativa correta " );
+             pontos1 += 1000;
+    }
+    else {
+        System.out.println("\nAlternativa incorreta ");
+            pontos1 += 0;
+    }
+            
+                    
+        System.out.println("\nPergunta para o(a) "+jogador2
+                + "\nA sustentabilidade está diretamente ligada:"
+                + "\n 1) Ao estudo e seguimento da vida antropo-cultural "
+                + "\n 2) A construção e reformas de prédios "
+                + "\n 3) A forma como os animais vivem em seu habitat natural "
+                + "\n 4) Ao desenvolvimento econômico e material sem agredir o meio ambiente, usando os recursos naturais de forma inteligente ");
+            resposta4 = input.nextInt();
+        
+    if (resposta4 == 4) {
+        System.out.println("\nAlternativa correta " );
+            pontos2 += 1000;
+    }
+    else {
+        System.out.println("\nAlternativa incorreta ");
+            pontos2 += 0;
+    }
+    
+        System.out.println("\nPergunta para o(a) "+jogador1
+                + "\nQual destes é um dos benefícios da sustentabilidade?"
+                + "\n 1) Garante um planeta com os rios e praias cheios de resíduos  "
+                + "\n 2) Garante um planeta com muita poluição "
+                + "\n 3) Garante uma má qualidade de vida para os animais"
+                + "\n 4) Garante um planeta limpo, saudável e o desenvolvimento das diversas formas de vida ");
+            resposta5 = input.nextInt();
+        
+    if (resposta5 == 4) {
+        System.out.println("\nAlternativa correta " );
+            pontos1 +=  1000;
+    }
+    else {
+        System.out.println("\nAlternativa incorreta ");
+            pontos1 += 0;
+    }
+    
+        System.out.println("\nPergunta para o(a) "+jogador2
+                + "\n Qual alternativa representa fonte de energia limpa e renovável?"
+                + "\n 1) Energia eólica "
+                + "\n 2) Energia geotérmica "
+                + "\n 3) Energia hidráulica "
+                + "\n 4) Todas as alternativas ");
+            resposta6 = input.nextInt();
+        
+    if (resposta6 == 4) {
+        System.out.println("\nAlternativa correta " );
+            pontos2 += 1000;
+    }
+    else {
+        System.out.println("\nAlternativa incorreta ");
+            pontos2 += 0;
+    }
+    
+        System.out.println("\nPergunta para o(a)"+jogador1
+                + "\nExistem materiais que podemos reutilizar e fazer coisas como brinquedos, com nossas próprias maõs,"
+                + "\nQuais são esses materiais?"
+                + "\n 1) Vidros "
+                + "\n 2) Metais e aluminio "
+                + "\n 3) Garrafas pet e papelões "
+                + "\n 4) Alimentos ");
+            resposta7 = input.nextInt();
+        
+    if (resposta7 == 3) {
+        System.out.println("\nAlternativa correta " );
+            pontos1 += 1000;
+    }
+    else {
+        System.out.println("\nAlternativa incorreta ");
+            pontos1 += 0;
+    }
+    
+        System.out.println("\nPergunta para o(a) "+jogador2
+                + "\nO que nós podemos fazer no dia a dia para ajudar o planeta?  "
+                + "\n 1) Escovar os dentes com a torneira ligada  "
+                + "\n 2) Tomar banhos demorados "
+                + "\n 3) Aprender sobre a coleta seletiva, para jogar os lixos nos seus devidos lugares "
+                + "\n 4) Deixar as luzes de casa sempre acesas ");
+            resposta8 = input.nextInt();
+        
+    if (resposta8 == 3) {
+        System.out.println("\nAlternativa correta " );
+            pontos2 += 1000;
+    }
+    else {
+        System.out.println("\nAlternativa incorreta ");
+            pontos2 += 0;
+    }
+    
+        System.out.println("\nChegamos ao fim do jogo!");
+            
+            
+        System.out.println("\nA pontuação do "+jogador1+" foi de: " + pontos1);
+            
+           
+        System.out.println("\nA pontuação do "+jogador2+" foi de: " + pontos2);
+            
+    if (pontos1 > pontos2) {
+        System.out.println("\nO "+jogador1+" venceu!!!");
+    }
+    else if (pontos1 < pontos2){
+        System.out.println("\nO "+jogador2+" venceu!!!");
+    }
+    else if (pontos1 == pontos2){
+        System.out.println("\nEmpate!!!");
+    }
+    }
+}    
+     
+    
